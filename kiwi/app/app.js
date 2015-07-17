@@ -55,4 +55,3 @@ function retrieveReviews(input,name){
     });
   });
 }
-retrieveReviews("San Francisco, CA","happy");
