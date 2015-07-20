@@ -14,6 +14,9 @@
       }
       body {
         background-color: white;
+        background-image: url("https://i.imgur.com/E8kAWZJ.jpg");
+        background-position: center center;
+        background-size: 100% 100%;
         height: 235mm;
         width: 235mm;
         MARGIN: 0 AUTO;
@@ -21,7 +24,20 @@
     </style>
   </head>
   <body>
-    <audio id="cat" src="sounds/cat.mp3" preload="auto"></audio>
-    <audio id="purr" src="sounds/purr.mp3" preload="auto"></audio>
+    <audio id="snare" src="sounds/snare.mp3" preload="auto"></audio>
+    <audio id="bass" src="sounds/bass.mp3" preload="auto"></audio>
+    <audio id="cymbal" src="sounds/cymbal.mp3" preload="auto"></audio>
+    <audio id="snare_loop" src="sounds/snare.mp3" preload="auto"></audio>
+    <audio id="bass_loop" src="sounds/bass.mp3" preload="auto"></audio>
+    <audio id="cymbal_loop" src="sounds/cymbal.mp3" preload="auto"></audio>
+    <input class="timer" id="snare_timer" placeholder="Snare Tempo" value="100"></input>
+    <input class="timer" id="bass_timer" placeholder="Bass Tempo"></input>
+    <input class="timer" id="cymbal_timer" placeholder="cymbal Tempo"></input>
+    <!--<audio id="cat" src="sounds/cat.mp3" preload="auto"></audio>
+    <audio id="purr" src="sounds/purr.mp3" preload="auto"></audio>--
+    <!--http://www.ludwig-drums.com/images/drumheads/LW4222V.jpg-->
+    <!-- Background URL: http://imgur.com/E8kAWZJ -->
+    <!--https://www.youtube.com/watch?v=UMFGlacb7Ok Bass sound effect-->
+    <!-- https://www.youtube.com/watch?v=xYnB6r46Nq8 Snare sound effect -->
   </body>
 </html>
