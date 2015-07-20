@@ -1,19 +1,20 @@
 var cats = {};
-var count = 0;
 Leap.loop(function(frame) {
   frame.hands.forEach(function(hand, index) {
-    if (count == 0) {
-      document.getElementById('cat').play();
-    }
-    if(count > 0) {
-      document.getElementById('purr').play();
-    }
-    console.log(count)
     var cat = ( cats[index] || (cats[index] = new Cat()) );    
     cat.setTransform(hand.screenPosition(), hand.roll());
-    count += 1;
   });
-  
+  if(frame.gestures.length == 1) {
+    frame.gestures.forEach( function(gesture, index) {
+      console.log(frame.gestures[index]);
+      var gesture_handIds = frame.gestures[index].handIds;
+      frame.hands.forEach(function(hand, index) {
+        if (frame.hands) {
+            //Find position.        
+        }
+      });
+    });
+  }
 }).use('screenPosition', {scale: 0.25});
 
 
