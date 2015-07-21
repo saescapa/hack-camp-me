@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Messenger</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="error">Hi</div>
+    <div class="messenger container">
+      <header>Messenger</header>
+
+      <!--Username Input-->
+      <div class='messenger-toolbar'>
+        <label for="usernameInput">Username:</label>
+        <input type='text' id='usernameInput' placeholder='enter a username...'>
+        <label for="usernameInput">Color:</label>
+        <input type='text' id='colorInput' placeholder='Choose any CSS color values.'>
+      </div>
+
+      <!--List of Messages-->
+      <ul id='messageList' class="messenger-messages"></ul>
+
+      <!--New Message Input-->
+      <footer>
+        <input type='text' id='messageInput'  placeholder='Type a message...'>
+        <input type='text' id='urlInput' placeholder='Image URL (Optional)'>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
