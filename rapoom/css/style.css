@@ -16,13 +16,39 @@ html, body {
   padding: 10px; }
   .content .messages .line {
     padding: 5px;
-    border-bottom: 1px solid #707070; }
+    border-bottom: 1px solid #707070;
+    min-height: 20px; }
     .content .messages .line:nth-last-child(1) {
       border-bottom: 0px solid black; }
+    .content .messages .line .date {
+      float: right;
+      padding-right: 5px; }
   .content .suggestions {
     color: #adadad;
     font-style: italic;
     padding: 10px 10px 10px 0px; }
+
+#error {
+  border-radius: 10px;
+  background-color: #ff1a1a;
+  border: 2px solid #b70000;
+  color: #F8F5F5;
+  padding: 10px;
+  position: fixed;
+  top: 25px;
+  text-align: center;
+  width: 300px;
+  min-height: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1s; }
+
+.credit {
+  width: 60%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.scss.map */
 
