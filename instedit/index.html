@@ -1,14 +1,31 @@
 <!DOCTYPE>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <title> Instedit </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body>
-    <div class="top">How to use.</div>
-    <div class="input" id="input">
-      <input type="text" id="field" placeholder="Input text here."></input>
-      <button id="submit" onclick="clicked();">Submit</button>
+    <div class="top"> 
+      <div class="logo"> Instedit </div>
+      <div class="buttons"> 
+        <div class="button color"> Color </div>
+        <div class="button font"> Font </div>
+        <div class="button image" id="image"> Image </div>
+      </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    
+    <div class="content">
+      <div class="input" id="input">
+        <textarea type="text" id="field" placeholder="Input text here."> </textarea>
+        <button id="submit" onclick="clicked()">Submit</button>
+      </div>
+      <div id="images">
+        
+      </div>
+      
+      <script src="js/main.js"></script>
+    </div>
   </body>
 </hmtl>

@@ -1,27 +1,34 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-Backtrace:
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:482:in `read'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:293:in `watch'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/plugin.rb:108:in `method_missing'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.14/bin/sass:13:in `<top (required)>'
-/usr/local/rvm/gems/ruby-2.2.1/bin/sass:23:in `load'
-/usr/local/rvm/gems/ruby-2.2.1/bin/sass:23:in `<main>'
-/usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
-/usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+  body .top {
+    height: 70px;
+    background-color: #004498;
+    color: #9FBDE6;
+    width: 100%;
+    display: table; }
+    body .top .logo {
+      height: 70px;
+      width: 150px;
+      font-size: 3.5em;
+      display: inline-table; }
+    body .top .buttons {
+      height: 70px;
+      display: inline-table;
+      vertical-align: top; }
+      body .top .buttons .button {
+        display: inline-table;
+        font-size: 1.5em;
+        padding: 20px; }
 
 /*# sourceMappingURL=style.css.map */
